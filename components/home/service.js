@@ -22,13 +22,13 @@ export default function Footer() {
     <div class="container mx-auto px-4">
       <div class="mb-16 max-w-xl mx-auto text-center">
         <span class="text-lg text-gray-800 underline">Services</span>
-        <h2 class="text-4xl lg:text-5xl font-bold font-heading">What do we provide?</h2>
+        <h2 class="text-4xl lg:text-5xl font-bold font-heading font-serif">What do we provide?</h2>
       </div>
-      <div class="flex flex-wrap bg-gray-100 items-center  justify-around ">
+      <div class="flex flex-wrap bg-red-50 items-center  justify-around ">
       {data.map((datas) => (
         <div class="mb-8 lg:mb-0 py-4 w-full lg:w-1/3 px-4">
           <div class="py-12 px-6 bg-white rounded shadow text-center">
-            <h3 class="px-8 mb-4 text-2xl font-bold font-heading">{datas.head}</h3>
+            <h3 class="px-8 mb-4 text-2xl font-bold font-serif font-heading">{datas.head}</h3>
             <p class="text-gray-500">{datas.text}</p>
           </div>
         </div>

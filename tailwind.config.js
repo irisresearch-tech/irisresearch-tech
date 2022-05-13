@@ -20,9 +20,10 @@ module.exports = {
       blue:{
         50:'#38B1ED'
       },
-      dark:{
-        50:'#1558C4',
-        100:'#0A5ADA'
+      red:{
+        50:'#FAEDF0',
+        100:'#DD4A48',
+        200:'#FF9999'
       },
       indigo: colors.indigo,
       white: colors.white,

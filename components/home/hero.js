@@ -10,11 +10,11 @@ const img = {
 
 export default function Hero() {
   return (
-<section className="bg-gray-100 pb-8" id='hero'>
+<section className="bg-red-50 pb-8" id='hero'>
   <div className="container px-4 mx-auto">
     <div className="max-w-4xl mx-auto text-center pt-16 mb-24">
       <span className="text-lg text-gray-800 underline">Quantitative Crypto Trading Bots</span>
-      <h2 className="mb-8 mt-2 text-5xl lg:text-7xl text-gray-800 font-bold font-heading">Automate Your Crypto Trading</h2>
+      <h2 className="mb-8 mt-2 text-5xl lg:text-7xl text-gray-800 font-bold font-serif font-heading">Automate Your Crypto Trading</h2>
       <p className='text-gray-500'>We have been a team of world-class traders and technologists in crypto since
 2016. At Blackbox Research, we have built highly efficient and resilient bots
 with ability to trade across all major exchanges and continuously work towards

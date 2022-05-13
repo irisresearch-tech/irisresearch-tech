@@ -37,14 +37,14 @@ export default function Footer() {
   <div class="container px-4 mx-auto">
   <div class="mb-16 max-w-xl mx-auto text-center">
         <span class="text-lg text-gray-800 underline">Beliefs </span>
-        <h2 class="text-4xl lg:text-5xl font-bold font-heading">Core values</h2>
+        <h2 class="text-4xl lg:text-5xl font-bold font-serif font-heading">Core values</h2>
       </div>
     <div class="flex flex-wrap -mx-4 -mb-10">
     {data.map((datas) => (
       <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-10">
         <div class="max-w-xs mx-auto text-center">
           <img class="block mx-auto mb-8 h-10 w-10" src={datas.img} alt="Core values images"/>
-          <h5 class="text-xl font-heading mb-4">{datas.head}</h5>
+          <h5 class="text-xl font-heading mb-4 font-serif">{datas.head}</h5>
           <p class="leading-8 text-gray-400">{datas.text}</p>
         </div>
       </div>

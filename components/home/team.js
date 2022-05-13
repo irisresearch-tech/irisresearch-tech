@@ -21,11 +21,11 @@ export default function About() {
     return (
         <><section>
 
-        <div class="py-20 bg-gray-50 radius-for-skewed" id="about">
+        <div class="py-20 bg-red-50 radius-for-skewed" id="about">
           <div class="container mx-auto px-4">
           <div class="mb-16 max-w-xl mx-auto text-center">
         <span class="text-lg text-gray-800 underline">Team </span>
-        <h2 class="text-4xl lg:text-5xl font-bold font-heading">Meet The Members</h2>
+        <h2 class="text-4xl lg:text-5xl font-bold font-heading font-serif">Meet The Members</h2>
       </div>
             <div class="flex flex-wrap -mx-4">
             {infos.map((info) => (

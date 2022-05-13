@@ -2,12 +2,12 @@
 
 export default function Example() {
   return (
-    <><div className="bg-gray-100 my-6 " id='contact'>
+    <><div className="bg-red-50 py-6 " id='contact'>
 
      
       <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
       <div className='text-center  pb-6 '>
-    <span class=" text-4xl lg:text-5xl font-bold font-heading" >Contact Us</span>
+    <span class=" text-4xl lg:text-5xl font-bold font-heading font-serif" >Contact Us</span>
     </div>
 
         <div className="relative bg-white shadow-xl">
@@ -19,7 +19,7 @@ export default function Example() {
 
             {/* Contact form */}
             <div className="py-10 px-6 max-w-7xl sm:px-10 lg:col-span-2 xl:p-12 ">
-              <h3 className="text-xl text-center text-gray-900">Feel free to drop a message if you are looking for partnership, joining our
+              <h3 className="text-xl font-semibold text-center text-gray-900 font-serif">Feel free to drop a message if you are looking for partnership, joining our
 team, discussing crypto or any opportunity.</h3>
               <form name="form" action="" method="POST" className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8 pageclip-form">
                 <div>
@@ -83,7 +83,7 @@ team, discussing crypto or any opportunity.</h3>
                 </div>
                 <div className="sm:col-span-2">
                   <label htmlFor="subject" className="block text-sm font-medium text-gray-900">
-                    Subject (Optional)
+                    Subject 
                   </label>
                   <div className="mt-1">
                     <input
@@ -96,7 +96,7 @@ team, discussing crypto or any opportunity.</h3>
                 <div className="sm:col-span-2">
                   <div className="flex justify-between">
                     <label htmlFor="message" className="block text-sm font-medium text-gray-900">
-                      Message (Optional)
+                      Message 
                     </label>
                     <span id="message-max" className="text-sm text-gray-500">
                       Max. 500 characters
@@ -116,7 +116,7 @@ team, discussing crypto or any opportunity.</h3>
                 <div className="sm:col-span-2 sm:flex sm:justify-start">
                   <button
                     type="submit"
-                    className="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-50 hover:bg-dark-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:w-auto "
+                    className="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-red-100 hover:bg-dark-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:w-auto "
                   >
                     Submit
                   </button>
