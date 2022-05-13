@@ -8,65 +8,65 @@ const data = [
     img:"/images/logo/FTX_logo.svg",
   },
   { 
-    id:"1",
+    id:"3",
     img:"/images/logo/Deribit_Company_Logo.svg",
   },
   { 
-    id:"2",
+    id:"4",
     img:"/images/logo/gateio.png",
   },
   { 
-    id:"1",
+    id:"5",
     img:"/images/logo/coinbase.svg",
   },
   { 
-    id:"2",
+    id:"6",
     img:"/images/logo/delta.svg",
   },
   { 
-    id:"1",
-    img:"/images/logo/CoinDCX.svg",
+    id:"7",
+    img:"/images/logo/CoinDCX.png",
   },
   { 
-    id:"2",
+    id:"8",
     img:"/images/logo/Bitbns.png",
     
   },
   { 
-    id:"1",
+    id:"9",
     img:"/images/logo/coinswitch-kuber.png",
   },
   { 
-    id:"2",
-    img:"/images/logo/crypto-com.svg",
+    id:"10",
+    img:"/images/logo/crypto-com.png",
   },
   { 
-    id:"1",
+    id:"11",
     img:"/images/logo/Gemini.svg",
   },
   { 
-    id:"2",
-    img:"/images/logo/bybit.svg",
+    id:"12",
+    img:"/images/logo/bybit.png",
   },
   { 
-    id:"1",
+    id:"13",
     img:"/images/logo/kraken.svg",
   },
   { 
-    id:"2",
+    id:"14",
     img:"/images/logo/huobi.svg",
   },
   { 
-    id:"2",
+    id:"15",
     img:"/images/logo/bitfinex.svg",
   },
   { 
-    id:"1",
-    img:"/images/logo/bitstamp.svg",
+    id:"16",
+    img:"/images/logo/bitstamp.png",
   },
   { 
-    id:"2",
-    img:"/images/logo/hitbtc-logo.svg",
+    id:"17",
+    img:"/images/logo/hitbtc-logo.png",
   },
 ]
 
