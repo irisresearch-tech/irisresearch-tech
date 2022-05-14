@@ -6,6 +6,13 @@ body {
   margin: 0 auto;
 }
 
+@font-face {font-family: "OrpheusW05-Regular";
+  src: url('/fonts/Orpheus_font.woff2') format('woff2'),
+    url('/fonts/Orpheus-font.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @layer components {
   .btn-primary {
     @apply rounded-full px-6 py-3 text-sm inline-flex items-center px-5 py-3 border border-transparent leading-4 font-medium shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500;

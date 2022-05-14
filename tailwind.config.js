@@ -4,19 +4,10 @@ module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx}', './components/**/*.{js,ts,jsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    fontFamily: {
+      serif: ['OrpheusW05-Regular','Times New Roman','ui-serif', 'Georgia','serif'],
+    },
     colors: {
-      green: {
-        50: "#CFFFEF",
-        100: "#AAFFE2",
-        200: "#80FFD4",
-        300: "#38FFBC",
-        400: "#00FEA8",
-        500: "#00F1A0",
-        600: "#02D88F",
-        700: "#02B77A",
-        800: "#018759",
-        900: "#026342"
-      },
       blue:{
         50:'#38B1ED'
       },

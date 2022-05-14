@@ -2,13 +2,13 @@
 
 const infos = [
     {
-      image: "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
+      image: "/images/home/shikhar_paliwal.jpeg",
       name:"Shikhar Paliwal",
       designation:"CEO",
       linkdin:"https://www.linkedin.com/in/shikharpaliwal/"
     },
     {
-        image: "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
+        image: "/images/home/arif.jpeg",
         name:"Mohd Arif Siddique",
         designation:"CTO",
         linkdin:"https://www.linkedin.com/in/mohd-arif-siddiqui-9351ab109/"
