@@ -2,9 +2,10 @@ import { useForm } from "react-hook-form";
 
 export default function Example() {
 
-  const { register, handleSubmit, formState: { errors } } = useForm();
-  const onSubmit = (data) => {
+  const { register, handleSubmit, formState: { errors },reset  } = useForm();
+  const onSubmit = (data, e) => {
     console.log(data);
+    e.target.reset();
   }
 
   return (
@@ -72,7 +73,7 @@ team, discussing crypto or any opportunity.</h3>
                       type="text"
                       name="phone"
                       id="phone"
-                      {...register("phone",{ required: true, maxLength: 13 })}
+                      {...register("phone",{ required: false, maxLength: 13 })}
                       autoComplete="tel"
                       className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                       aria-describedby="phone-optional" />
@@ -88,7 +89,7 @@ team, discussing crypto or any opportunity.</h3>
                       type="text"
                       name="last-name"
                       id="last-name"
-                      {...register("business",{ required: true, maxLength: 50} )}
+                      {...register("business",{ required: false, maxLength: 50} )}
                       autoComplete="family-name"
                       className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md" />
                   </div>
