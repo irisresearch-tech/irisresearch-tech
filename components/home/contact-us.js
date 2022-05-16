@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import {useEffect} from "react";
 
 export default function Example() {
 
@@ -7,6 +8,9 @@ export default function Example() {
     console.log(data);
     e.target.reset();
   }
+
+  useEffect(() => {
+  }, []);
 
   return (
     <><div className="bg-red-50 py-6 " id='contact'>
@@ -38,11 +42,11 @@ team, discussing crypto or any opportunity.</h3>
                       name="full-name"
                       id="full-name"
                       placeholder="Full Name"
-                      {...register("fullName" , { required: true, maxLength: 40 })}
+                      {...register("fullName" , { required: true})}
                       autoComplete="given-name"
                       className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md" />
                   </div>
-                  {errors.fullName && <p className="text-red-100">You have exceeded the number of character for Full Name</p>}
+                  {errors.fullName && <p className="text-red-100">Name is mandatory</p>}
                 </div>
 
                 <div>
@@ -55,11 +59,11 @@ team, discussing crypto or any opportunity.</h3>
                       name="email"
                       type="email"
                       placeholder="Email"
-                      {...register("email",{ required: true, maxLength: 20} )}
+                      {...register("email",{ required: true} )}
                       autoComplete="email"
                       className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md" />
                   </div>
-                  {errors.email && <p className="text-red-100">You have exceeded the number of character for Email</p>}
+                  {errors.email && <p className="text-red-100">Email is mandatory</p>}
                 </div>
                 <div>
                   <div className="flex justify-between">
@@ -78,7 +82,7 @@ team, discussing crypto or any opportunity.</h3>
                       className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                       aria-describedby="phone-optional" />
                   </div>
-                  {errors.phone && <p className="text-red-100">You have exceeded the number of character for Phone number</p>}
+                  {errors.phone && <p className="text-red-100">Phone number is too long</p>}
                 </div>
                 <div>
                   <label htmlFor="last-name" className="block text-sm font-medium text-gray-900">
@@ -89,26 +93,12 @@ team, discussing crypto or any opportunity.</h3>
                       type="text"
                       name="last-name"
                       id="last-name"
-                      {...register("business",{ required: false, maxLength: 50} )}
+                      {...register("business",{ required: false} )}
                       autoComplete="family-name"
                       className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md" />
                   </div>
-                  {errors.business && <p className="text-red-100">You have exceeded the number of character for Business Name</p>}
                 </div>
-                <div className="sm:col-span-2">
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-900">
-                    Subject
-                  </label>
-                  <div className="mt-1">
-                    <input
-                      type="text"
-                      name="subject"
-                      id="subject"
-                      {...register("subject",{ required: true, maxLength: 50 })}
-                      className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md" />
-                  </div>
-                  {errors.subject && <p className="text-red-100">You have exceeded the number of character for Subject</p>}
-                </div>
+
                 <div className="sm:col-span-2">
                   <div className="flex justify-between">
                     <label htmlFor="message" className="block text-sm font-medium text-gray-900">
@@ -121,13 +111,14 @@ team, discussing crypto or any opportunity.</h3>
                       id="message"
                       name="message"
                       rows={4}
-                      {...register("message",{ required: true, maxLength: 300 })}
+                      {...register("message",{ required: true, maxLength: 20 })}
                       className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border border-gray-300 rounded-md"
                       aria-describedby="message-max"
                       placeholder="Write your notes or questions here"
                       defaultValue={''} />
                   </div>
-                  {errors.message && <p className="text-red-100">You have exceeded the number of character for Message</p>}
+                  {errors.message && errors.message.type == "required" && <p className="text-red-100">Message is required</p>}
+                  {errors.message && errors.message.type == "maxLength" && <p className="text-red-100">Message is too long (max 2000 chars)</p>}
                 </div>
                 <div className="sm:col-span-2 sm:flex sm:justify-start">
                   <button
