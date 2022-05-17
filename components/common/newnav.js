@@ -43,10 +43,10 @@ const Nav = () => {
       <div className='w-full  left-0 md:px-24 z-50 md:flex w-full items-center justify-between bg-gray-50 py-4'>
           <div className='font-bold cursor-pointer px-12 sm:px-0  flex items-center '>
 
-                    <img style={{width:"26px"}} className="mr-2" src="images/logo.png" alt="Iris Research"/>
-                      <span className="block lg:hidden font-bold font-serif w-auto text-xl text-gray-800">Iris Research</span>
+                    <img style={{width:"30px"}} className="mr-2" src="images/logo.png" alt="Iris Research"/>
+                      <span className="block lg:hidden font-bold font-serif w-auto text-3xl text-gray-800">Iris Research</span>
 
-                      <span className="hidden lg:block font-bold font-serif text-2xl text-gray-800">Iris Research</span>
+                      <span className="hidden lg:block font-bold font-serif text-3xl text-gray-800">Iris Research</span>
 
           </div>
 
@@ -61,7 +61,7 @@ const Nav = () => {
       <ul className={mobile ? `md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-gray-100 md:bg-transparent  md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ':'top-[-490px]'}` :`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-gray-100 md:bg-transparent  md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9  ${open ? 'top-20 ':'top-[-490px]'}`}>
         {
           Links.map((link)=>(
-            <li key={link.name} className='md:ml-8 text-sm font-medium md:my-0 my-7'>
+            <li key={link.name} className='md:ml-12 text-sm font-medium md:my-0 my-7'>
               <AnchorLink href={link.link} className={text ? 'text-gray-800   uppercase ' : 'text-gray-800 uppercase duration-500'}>{link.name}</AnchorLink>
             </li>
           ))
