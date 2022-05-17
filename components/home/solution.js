@@ -44,7 +44,7 @@ export default function Footer() {
         <div className="max-w-xs mx-auto text-center">
           <img className="block mx-auto mb-8 h-10 w-10" src={datas.img} alt="Core values images"/>
           <h5 className="text-xl font-heading mb-4 font-serif">{datas.head}</h5>
-          <p className="leading-6 text-gray-400">{datas.text}</p>
+          <p className="leading-6 text-gray-900">{datas.text}</p>
         </div>
       </div>
       ))}

@@ -41,19 +41,20 @@ const Nav = () => {
     <div className=' sticky top-0 z-50'>
       {/* <div className={navbar ? 'w-full  left-0 md:px-24 z-50 md:flex w-full items-center justify-between bg-blue-50 py-4' : 'w-full fixed top-0 left-0 md:px-24 z-50 md:flex items-center justify-between bg-transparent py-4 '}> */}
       <div className='w-full  left-0 md:px-24 z-50 md:flex w-full items-center justify-between bg-gray-50 py-4'>
-      <div className='font-bold cursor-pointer px-12 sm:px-0  flex items-center '>
+          <div className='font-bold cursor-pointer px-12 sm:px-0  flex items-center '>
 
-                  <span className="block lg:hidden  w-auto uppercase text-xl text-gray-800">BlackBox</span>
+                    <img style={{width:"26px"}} className="mr-2" src="images/logo.png" alt="Iris Research"/>
+                      <span className="block lg:hidden font-bold font-serif w-auto text-xl text-gray-800">Iris Research</span>
 
-                  <span className="hidden lg:block uppercase  text-2xl text-gray-800">BlackBox</span>
+                      <span className="hidden lg:block font-bold font-serif text-2xl text-gray-800">Iris Research</span>
 
-      </div>
+          </div>
 
       <div onClick={()=>setOpen(!open)} className='text-3xl absolute right-8 top-3 cursor-pointer md:hidden'>
       <svg viewBox="0 0 100 80" width="40" height="40" fill='#000000'>
-  <rect width="100" height="20"></rect>
-  <rect y="30" width="100" height="20"></rect>
-  <rect y="60" width="100" height="20"></rect>
+      <rect width="100" height="20"></rect>
+      <rect y="30" width="100" height="20"></rect>
+      <rect y="60" width="100" height="20"></rect>
 </svg>
       </div>
 

@@ -28,7 +28,7 @@ export default function Footer() {
         <div key={index} className="py-4 w-full sm:w-1/2 px-4">
           <div className="py-12 px-6 bg-white rounded shadow text-center">
             <h3 className="px-8 mb-4 text-2xl  font-serif font-heading">{datas.head}</h3>
-            <p className="text-gray-500">{datas.text}</p>
+            <p className="text-gray-900">{datas.text}</p>
           </div>
         </div>
         ))}

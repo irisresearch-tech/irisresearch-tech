@@ -1,17 +1,27 @@
 @tailwind components;
-
-body {
-  font-family: "Inter", "Helvetica Neue", "Helvetica",
-    "sans-serif";
-  margin: 0 auto;
-}
-
-@font-face {font-family: "OrpheusW05-Regular";
-  src: url('/fonts/Orpheus_font.woff2') format('woff2'),
-    url('/fonts/Orpheus-font.woff') format('woff');
+@font-face {font-family: "Neue Haas Grotesk Display Pro";
+  src: url('/fonts/NeueHaasDisplayThin.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
+@font-face {font-family: "OrpheusW05-Regular";
+  src: url('/fonts/Orpheus_font.woff2') format('woff2'),
+  url('/fonts/Orpheus-font.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+body {
+  font-family: "Neue Haas Grotesk Display Pro", "Helvetica Neue", "Helvetica",
+    "sans-serif";
+  margin: 0 auto;
+  letter-spacing: .05em;
+  font-size: 18px;
+}
+
+
 
 @layer components {
   .btn-primary {

@@ -15,7 +15,7 @@ export default function Home() {
     return (
         <div>
             <Head>
-                <title>BlackBox</title>
+                <title>Iris Research</title>
             </Head>
             <div>
                 <Navbar/>
