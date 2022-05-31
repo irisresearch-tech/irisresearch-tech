@@ -15,7 +15,7 @@ export default function Home() {
     return (
         <div>
             <Head>
-                <title>Iris Research</title>
+                <title>Iris Research - Quantitative Crypto Trading Bots</title>
             </Head>
             <div>
                 <Navbar/>
