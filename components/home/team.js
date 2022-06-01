@@ -31,8 +31,8 @@ export default function About() {
               <div key={index} className="mb-6 w-full lg:w-1/2 px-4">
 
                 <div className="flex flex-wrap items-center bg-white rounded shadow overflow-hidden">
-                  <img  className="w-full -mt-10 sm:mt-0 md:w-1/3 h-64 sm:h-40 object-cover object-top" src={info.image} alt=""/>
-                  <div className="w-full md:w-2/3 md:px-12 p-2 text-left">
+                  <img  className="w-1/2  -mt-10 sm:mt-0 lg:w-1/3 h-64 lg:h-40 object-cover object-top" src={info.image} alt=""/>
+                  <div className="w-1/2  lg:w-2/3 lg:px-12 p-4 sm:p-2 text-left">
                     <h4 className="my-2 text-xl font-heading">{info.name}</h4>
                     {/* <p className="mb-4 text-xl  text-gray-400 leading-loose">{info.designation}</p> */}
                       <a className="" target="_blank" href={info.linkdin}>
