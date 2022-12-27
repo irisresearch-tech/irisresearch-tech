@@ -5,7 +5,7 @@ const data = [
   },
   {
     id:"2",
-    img:"/images/logo/FTX_logo.svg",
+    img:"/images/logo/hitbtc-logo.png",
   },
 
   {
@@ -64,10 +64,6 @@ const data = [
   {
     id:"16",
     img:"/images/logo/bitstamp.png",
-  },
-  {
-    id:"17",
-    img:"/images/logo/hitbtc-logo.png",
   },
 ]
 
